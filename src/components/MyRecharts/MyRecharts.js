@@ -1,5 +1,5 @@
 import React from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart, Pie, PieChart, RadialBar, RadialBarChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, ComposedChart, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import './MyCharts.css'
 
 const MyRecharts = () => {
@@ -44,6 +44,7 @@ const MyRecharts = () => {
   return (
     <div className='my-charts'>
       <div className='line-chart'>
+        <h3>Line Chart-</h3>
         <LineChart width={500} height={300} data={data}>
           <Line dataKey={'month'}></Line>
           <Line dataKey={'investment'}></Line>
@@ -55,6 +56,7 @@ const MyRecharts = () => {
         </LineChart>
       </div>
       <div>
+        <h3>Area Chart-</h3>
         <AreaChart width={500} height={300} data={data}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
           <defs>
@@ -78,6 +80,7 @@ const MyRecharts = () => {
         </AreaChart>
       </div>
       <div>
+        <h3>Bar Chart-</h3>
       <BarChart width={500} height={300} data={data}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="month" />
@@ -90,6 +93,7 @@ const MyRecharts = () => {
 </BarChart>
       </div>
       <div>
+        <h3>Composed Chart-</h3>
       <ComposedChart width={500} height={300} data={data}>
   <XAxis dataKey="month" />
   <YAxis />

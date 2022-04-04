@@ -13,7 +13,7 @@ const Home = () => {
             <div className='profile-title'>
                 <h1>Choose Your Next Laptop</h1>
                 <h2>Choose Your Best Laptop</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut unde ea nihil repudiandae repellat asperiores nulla cum doloribus doloremque deleniti!</p>
+                <p>Our experts test and rate hundreds of products each year. We are updating our roundups all the time, so you always know what is best to buy. See the latest top picks in our most popular categories...</p>
                 <button>Live Demo</button>
             </div>
             <div>
@@ -21,7 +21,7 @@ const Home = () => {
             </div>
         </div>
         <div >
-            <h1>Customer Reviews</h1>
+            <h1 className='customer-reviews-title'>Customer Reviews</h1>
             <div className='customer-reviews'>
             {
                 users.slice(0, 3).map(user=> <Customer 

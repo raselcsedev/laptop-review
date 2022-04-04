@@ -5,11 +5,40 @@
     padding: 30px 10px;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
 }
+.customer img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.customer-title{
+    display: flex;
+    align-content: center;
+}
 .customer h1{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
 }
+.customer small{
+    margin-top: 0px;
+    margin-left: 20px;
+    align-content: center;
+    color: darkcyan;
+    justify-content: center;
+    font-size: x-small;
+    font-family: 'Courier New', Courier, monospace;
+}
+.customer h6{
+    font-weight: 100;
+    font-size: small;
+    text-align: justify;
+    height: 50px;
+}
 .customer p{
     font-size: small;
-    color: yellowgreen;
+    color: rgb(235, 216, 10);
 }

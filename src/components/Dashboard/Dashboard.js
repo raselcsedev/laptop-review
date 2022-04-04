@@ -4,7 +4,6 @@ import MyRecharts from '../MyRecharts/MyRecharts';
 const Dashboard = () => {
     return (
         <div>
-            <h1>DashBoard.......</h1>
             <MyRecharts></MyRecharts>
         </div>
     );

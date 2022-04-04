@@ -32,6 +32,10 @@
     border-radius: 5px;
     margin: 20px;
 }
+.customer-reviews-title{
+    width: 100%;
+    text-align: center;
+}
 
 .customer-reviews{
     display: grid;
@@ -49,6 +53,7 @@
     border-radius: 5px;
     padding: 5px 20px;
     font-weight: 700;
+    margin: 20px 0px;
 }
 .review-link{
     color: aliceblue;
@@ -74,5 +79,9 @@
         color: rgb(13, 9, 131);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
+    }
+    .customer-reviews{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
   }
