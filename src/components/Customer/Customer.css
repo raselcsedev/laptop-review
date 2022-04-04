@@ -1,0 +1,15 @@
+.customer{
+    /* border: 2px solid forestgreen; */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px 10px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+}
+.customer h1{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+.customer p{
+    font-size: small;
+    color: yellowgreen;
+}
