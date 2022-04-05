@@ -55,6 +55,7 @@ const MyRecharts = () => {
           <YAxis></YAxis>
         </LineChart>
       </div>
+
       <div>
         <h3>Area Chart-</h3>
         <AreaChart width={500} height={300} data={data}
@@ -79,31 +80,33 @@ const MyRecharts = () => {
           <Tooltip></Tooltip>
         </AreaChart>
       </div>
+
       <div>
         <h3>Bar Chart-</h3>
-      <BarChart width={500} height={300} data={data}>
-  <CartesianGrid strokeDasharray="3 3" />
-  <XAxis dataKey="month" />
-  <YAxis ></YAxis>
-  <Tooltip />
-  <Legend />
-  <Bar dataKey="investment" fill="#8884d8" />
-  <Bar dataKey="sell" fill="#82ca9d" />
-  <Bar dataKey="revenue" fill="#82ca9d" />
-</BarChart>
+        <BarChart width={500} height={300} data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="month" />
+          <YAxis ></YAxis>
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="investment" fill="#8884d8" />
+          {/* <Bar dataKey="sell" fill="#82ca9d" /> */}
+          <Bar dataKey="revenue" fill="#82ca9d" />
+        </BarChart>
       </div>
+
       <div>
         <h3>Composed Chart-</h3>
-      <ComposedChart width={500} height={300} data={data}>
-  <XAxis dataKey="month" />
-  <YAxis />
-  <Tooltip />
-  <Legend />
-  <CartesianGrid stroke="#f5f5f5" />
-  <Area type="monotone" dataKey="investment" fill="#8884d8" stroke="#8884d8" />
-  <Bar dataKey="sell" barSize={20} fill="#413ea0" />
-  <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
-</ComposedChart>
+        <ComposedChart width={500} height={300} data={data}>
+          <XAxis dataKey="month" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <CartesianGrid stroke="#f5f5f5" />
+          <Area type="monotone" dataKey="investment" fill="#8884d8" stroke="#8884d8" />
+          {/* <Bar dataKey="sell" barSize={20} fill="#413ea0" /> */}
+          <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
+        </ComposedChart>
 
       </div>
     </div>

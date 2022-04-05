@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import useUsers from '../../hooks/useUsers';
 import Customer from '../Customer/Customer';
 import './Review.css'
