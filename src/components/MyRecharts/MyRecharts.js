@@ -46,13 +46,11 @@ const MyRecharts = () => {
       <div className='line-chart'>
         <h3>Line Chart-</h3>
         <LineChart width={500} height={300} data={data}>
-          <Line dataKey={'month'}></Line>
-          <Line dataKey={'investment'}></Line>
           <Line dataKey={'sell'}></Line>
-          <Line dataKey={'revenue'}></Line>
           <Tooltip></Tooltip>
-          <XAxis></XAxis>
+          <XAxis dataKey={'month'}></XAxis>
           <YAxis></YAxis>
+          <Legend></Legend>
         </LineChart>
       </div>
 
@@ -75,9 +73,9 @@ const MyRecharts = () => {
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Area type="monotone" dataKey="investment" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
-          <Area type="monotone" dataKey="sell" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
           <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
           <Tooltip></Tooltip>
+          <Legend></Legend>
         </AreaChart>
       </div>
 
@@ -90,7 +88,6 @@ const MyRecharts = () => {
           <Tooltip />
           <Legend />
           <Bar dataKey="investment" fill="#8884d8" />
-          {/* <Bar dataKey="sell" fill="#82ca9d" /> */}
           <Bar dataKey="revenue" fill="#82ca9d" />
         </BarChart>
       </div>
@@ -104,7 +101,6 @@ const MyRecharts = () => {
           <Legend />
           <CartesianGrid stroke="#f5f5f5" />
           <Area type="monotone" dataKey="investment" fill="#8884d8" stroke="#8884d8" />
-          {/* <Bar dataKey="sell" barSize={20} fill="#413ea0" /> */}
           <Line type="monotone" dataKey="revenue" stroke="#ff7300" />
         </ComposedChart>
 

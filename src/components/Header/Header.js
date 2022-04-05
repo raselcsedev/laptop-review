@@ -7,11 +7,11 @@ const Header = () => {
         <nav>
 
             <div className='link-container'>
-                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/'>Home</NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/review'>Reviews</NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/dashboard'>Dashboard</NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/blog'>Blogs</NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/about'>About</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/'>HOME</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/reviews'>REVIEWS</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/dashboard'>DASHBOARD</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/blogs'>BLOGS</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}to='/about'>ABOUT</NavLink>
                 
             </div>
         </nav>

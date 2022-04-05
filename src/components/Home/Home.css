@@ -14,6 +14,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .profile-title h2{
+    margin-top: 0px;
     font-weight:bolder;
     color: rgb(13, 9, 131);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -34,7 +35,10 @@
 }
 .customer-reviews-title{
     width: 100%;
+    font-weight: 900;
     text-align: center;
+    color: rgb(3, 93, 93);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .customer-reviews{
@@ -60,7 +64,7 @@
     text-decoration: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 750px) {
     .home-profile img{
         height: 300px;
         width: 250px;
