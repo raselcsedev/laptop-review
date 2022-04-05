@@ -14,7 +14,7 @@ const Home = () => {
                 <h1>Choose Your Next Laptop</h1>
                 <h2>Choose Your Best Laptop</h2>
                 <p>Our experts test and rate hundreds of products each year. We are updating our roundups all the time, so you always know what is best to buy. See the latest top picks in our most popular categories...</p>
-                <button>Live Demo</button>
+                <button> <a target="_blank" href="https://www.youtube.com/watch?v=iqCm5uLIhCM">Live Demo</a> </button>
             </div>
             <div>
                 <img src={pic} alt="" />
